@@ -1,3 +1,39 @@
+**Weather Forecasting App**
+The Weather Forecasting App is a web application that provides users with temperature and weather summary forecasts for upcoming hours and days based on latitude and longitude coordinates. The app leverages the Met Norway Weather API to fetch weather data for a specific location.
+
+**Functionality**
+Input Form: The app features an input form where users can enter latitude and longitude coordinates to specify the location for which they want to fetch weather forecasts.
+
+**Get Forecast Button:** After entering the coordinates, users can click on the "Get Forecast" button to retrieve weather data for the specified location.
+
+**Weather Data Display:** The app displays the fetched weather data in a tabular format, showing the temperature, time, and weather summary for upcoming hours and days.
+
+**Technologies Used**
+**Next.js**: Next.js is used as the framework for building the web application. It provides server-side rendering, routing, and other features to enhance the development experience.
+
+**React**: React is used for building the user interface components of the Weather Forecasting App. It allows for the creation of interactive and dynamic UI elements.
+
+**CSS:** CSS is used for styling the components and layout of the app, ensuring a visually appealing and user-friendly interface.
+
+**API Endpoint**
+The Weather Forecasting App retrieves weather data from the Met Norway Weather API. The API endpoint used for fetching weather forecasts is:
+**https://api.met.no/weatherapi/locationforecast/2.0/compact?lat={latitude}&lon={longitude}**
+
+
+Users can replace {latitude} and {longitude} with the desired latitude and longitude coordinates to fetch weather data for their specified location.
+
+**Usage**
+****To use the Weather Forecasting App, follow these steps**:
+
+Input latitude and longitude coordinates into the form fields.
+Click on the "Get Forecast" button to retrieve weather data.
+View the weather forecasts displayed in the table format.
+**Contributing**
+Contributions to the Weather Forecasting App project are welcome! If you'd like to contribute, fork the repository, make your changes, and submit a pull request.
+
+**License**
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
