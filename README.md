@@ -22,6 +22,35 @@ The Weather Forecasting App retrieves weather data from the Met Norway Weather A
 
 Users can replace {latitude} and {longitude} with the desired latitude and longitude coordinates to fetch weather data for their specified location.
 
+**_app.js:**
+
+This file serves as the entry point for the Next.js application.
+It imports the global CSS file globals.css.
+The App component receives Component and pageProps as props and renders the Component with the given pageProps.
+
+**_document.js:**
+
+This file defines the basic structure of the HTML document used by Next.js.
+It imports components from next/document for Html, Head, Main, and NextScript.
+The Document component returns an HTML document with the specified language, including the Main content of the app and the NextScript for loading scripts.
+
+**layout.js:**
+
+This file defines the root layout for the application.
+It imports the global CSS file globals.css and the Inter font from next/font/google.
+The metadata object contains title and description metadata for the app.
+The RootLayout component wraps the children with HTML structure and applies the inter font class to the body.
+
+**page.js:**
+
+This file contains the main functionality of the Weather Forecasting App.
+It defines the Home component, which serves as the main page of the app.
+The useState hook is used to manage state variables for latitude, longitude, and weather forecast data.
+The API_BASE_URL constant holds the base URL for fetching weather data from the Met Norway Weather API.
+The getWeatherData function is an asynchronous function that fetches weather data from the API based on the provided latitude and longitude.
+The form allows users to input latitude and longitude coordinates and submit to fetch weather data.
+The fetched weather data is displayed in a table format, showing the time, temperature, and weather summary for each forecasted hour.
+
 **Usage**
 ****To use the Weather Forecasting App, follow these steps**:
 
